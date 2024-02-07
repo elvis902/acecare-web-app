@@ -4,31 +4,33 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import InlineSVG from 'react-inlinesvg';
 import appLogo from './assets/images/acecare_logo.png'
 import Home from './views/home/home';
+
+
 const { Header, Content, Footer } = Layout;
 const items = [
   {
     key: "home",
-    label: "Home",
+    label: <a href="#home">Home</a>,
   },
   {
     key: "about",
-    label: "About",
+    label: <a href="#about">About</a>,
   },
   {
     key: "doctors ",
-    label: "Doctors",
+    label:<a href="#doctors">Doctors</a>,
   },
   {
     key: "departments ",
-    label: "Departments",
+    label: <a href="#departments">Departments</a>,
   },
   {
     key: "contactUs",
-    label: "Contact Us",
+    label: <a href="#contact">Contact Us</a>,
   },
   {
     key: "book",
-    label: "Book",
+    label: <a href="#book">Book</a>,
   }
 ]
 // const items = new Array(3).fill(null).map((_, index) => ({
@@ -44,18 +46,20 @@ const App = () => {
       <Header className='header-style'>
         <div className="app-logo"> 
           <img src={appLogo} alt='app-logo' className='app-logo-img'/>
-          <scan className='app-logo-title'>Acecare</scan>
+          <span className='app-logo-title'>Acecare</span>
         </div>
         <Menu
           theme="light"
           mode="horizontal"
-          defaultSelectedKeys={['2']}
+          defaultSelectedKeys={['home']}
           items={items}
           className='navbar-style'
         />
       </Header>
       <Content className='content-style'>
         <Home/>
+  
+        
       </Content>
       <Footer
         style={{
