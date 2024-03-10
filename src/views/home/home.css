@@ -14,8 +14,10 @@ section{
     padding: 7rem 0;
 }
 
+a { color: inherit; } 
+
 .home{
-    background: url(../../assets/images/home1-img.jpg);
+    background: url(../../assets/images/home_bg.jpg);
     background-size: cover;
     position: relative;
     width: 100%;
@@ -63,7 +65,7 @@ section{
     text-transform: uppercase;
     color: #00BFFF;
     padding-bottom: 20px;
-    text-shadow: .25rem .25rem 0 rgba(0, 0, 0, .2);
+    text-shadow: .15rem .15rem 0 rgba(0, 0, 0, .2);
 }
 
 
@@ -88,7 +90,7 @@ section{
     padding: 8px;
     font-size: 2.5rem;
     font-weight: bold;
-    text-shadow: .25rem .25rem 0 rgba(0, 0, 0, .2);
+    text-shadow: .15rem .15rem 0 rgba(0, 0, 0, .2);
 }
 
 .content p{
@@ -135,7 +137,7 @@ section{
     color: #00BFFF;
     padding-bottom: 20px;
     text-transform: uppercase;
-    text-shadow: .25rem .25rem 0 rgba(0, 0, 0, .2);
+    text-shadow: .15rem .15rem 0 rgba(0, 0, 0, .2);
 }
 
 .doctors-1 p{
@@ -157,9 +159,9 @@ section{
 }
 
 .doc-1 h3{
-    font-size: 1.4rem;
-    font-weight:bold;
-    padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
 }
 
 .doc-1 span{
@@ -171,7 +173,9 @@ section{
 /* CSS for doctorsCard */
 
 .doc-container-image{
-    width: 50%;
+    width: 60%;
+    object-fit: cover;
+    height: 150px;
 }
 
 
@@ -181,7 +185,7 @@ section{
     font-size: 3rem;
     font-weight: bold;
     color: #00BFFF;
-    text-shadow: .25rem .25rem 0 rgba(0, 0, 0, .2);
+    text-shadow: .15rem .15rem 0 rgba(0, 0, 0, .2);
     padding-bottom: 100px;
     text-transform: uppercase;
 }
@@ -259,9 +263,10 @@ section{
     font-size: 2.5rem;
 }
 
-.footer .box-container .box .icons span{
+.footer .box-container .box .icons a{
     padding: 1rem;
 }
+
    
 
 

@@ -50,7 +50,7 @@ function Home(props) {
                     <Col span={12}>
                         <div className="content">
                             <h3>We take care of your healthy life</h3>
-                            <p>Ace Care is a trusted multi-specialty clinic located in Kalabhanga ward no 4, Barpeta Road, Assam, 781315. We offer a comprehensive range of services, including pediatrics, rheumatology, internal medicine, and pain medicine. Our pediatric services include well-child care, immunizations, sick-child care, growth and development evaluation, asthma management, allergy evaluation and treatment, behavioral and developmental evaluation, and adolescent health care. Our rheumatology services include evaluation and management of rheumatoid arthritis, management of systemic lupus erythematosus (SLE), management of psoriatic arthritis, management of ankylosing spondylitis, management of gout, management of osteoarthritis, infusion therapy, management of vasculitis, and management of scleroderma. Our pain medicine services include medication management, interventional pain procedures, physical therapy and rehabilitation, and pain education and counseling. Our internal medicine services include management of acute illnesses, geriatric care, women's health services, primary care services for adults, management of chronic diseases, health promotion and disease prevention, comprehensive health assessments, immunizations, mental health evaluation and treatment, and men's health services. At Ace Care, we are committed to providing expert medical care in a compassionate and patient-centered environment. We offer telehealth visits, in-person visits, and walk-ins for your convenience. If you are looking for a multi-specialty clinic in Barpeta Road, Assam, visit Ace Care or call us at 8011063040.</p>
+                            <p>Ace Care is a trusted multi-specialty clinic located in Amtol, Manaspur, Near Rabindra Sarobar, Barpeta Road, Assam - 781315. We offer a comprehensive range of services, including pediatrics, rheumatology, internal medicine, and pain medicine. Our pediatric services include well-child care, immunizations, sick-child care, growth and development evaluation, asthma management, allergy evaluation and treatment, behavioral and developmental evaluation, and adolescent health care. Our rheumatology services include evaluation and management of rheumatoid arthritis, management of systemic lupus erythematosus (SLE), management of psoriatic arthritis, management of ankylosing spondylitis, management of gout, management of osteoarthritis, infusion therapy, management of vasculitis, and management of scleroderma. Our pain medicine services include medication management, interventional pain procedures, physical therapy and rehabilitation, and pain education and counseling. Our internal medicine services include management of acute illnesses, geriatric care, women's health services, primary care services for adults, management of chronic diseases, health promotion and disease prevention, comprehensive health assessments, immunizations, mental health evaluation and treatment, and men's health services. At Ace Care, we are committed to providing expert medical care in a compassionate and patient-centered environment. We offer telehealth visits, in-person visits, and walk-ins for your convenience. If you are looking for a multi-specialty clinic in Barpeta Road, Assam, visit Ace Care or call us at 8876136211.</p>
                             <a href="#" className="btn">learn more <span className="fa-solid fa-chevron-right"></span></a>
                         </div>
                     </Col>
@@ -105,34 +105,38 @@ function Home(props) {
 
             </section>
 
-            <section className="footer">
+            <section className="footer" id='contact'>
                 <div className="box-container">
                     <div className="box">
                         <h3>Contacts</h3>
-                        <p> <FontAwesomeIcon icon={faPhone} /> <span>+8011063040.</span></p>
-                        <p> <FontAwesomeIcon icon={faEnvelope} /> <span>abc123@gmail.com</span></p>
+                        <p> <FontAwesomeIcon icon={faPhone} /> <span>8876136211,8826868550</span></p>
+                        <p> <FontAwesomeIcon icon={faEnvelope} /> <span>acecare00@gmail.com</span></p>
                         <div className="icons">
                             <h3>Follow Us</h3>
-                            <span><FontAwesomeIcon icon={faFacebook} /></span>
+                            <a href="https://www.facebook.com/profile.php?id=61556438889687">
+                                <FontAwesomeIcon icon={faFacebook} />      
+                            </a>
+                            <a href="https://www.instagram.com/acecare_polyclinic/">
+                                <FontAwesomeIcon icon={faInstagram} />     
+                            </a>
+                            <a href="#">
+                                <FontAwesomeIcon icon={faTwitter} />     
+                            </a>
+                            {/* <span><FontAwesomeIcon icon={faFacebook} /></span>
                             <span><FontAwesomeIcon icon={faTwitter} /></span>
-                            <span><FontAwesomeIcon icon={faInstagram} /></span>
+                            <span><FontAwesomeIcon icon={faInstagram} /></span> */}
                         </div>
                     </div>
 
                     <div className="box">
                         <h3>Location</h3>
-                        <p><span><FontAwesomeIcon icon={faLocationDot} /></span> Kalabhanga, Ward no.-4, Barpeta Road, Pin no.-781315, Dist:
-                            Barpeta, Assam</p>
+                        <p><span><FontAwesomeIcon icon={faLocationDot} /></span> Amtol, Manaspur, Near Rabindra Sarobar, Barpeta Road, Assam - 781315</p>
                     </div>
 
                     <div className="box">
                         <h3>Availability</h3>
-                        <p>Monday : 9am-5pm</p>
-                        <p>Tuesday : 9am-5pm</p>
-                        <p>Wednesday : 9am-5pm</p>
-                        <p>Thursday : 9am-5pm</p>
-                        <p>Friday : 9am-5pm</p>
-
+                        <p>OPD : 8am-9pm</p>
+                        <p>Pharmacy : 24X7</p>
                     </div>
                 </div >
             </section >

@@ -1,5 +1,4 @@
 import React from 'react';
-import doctorImg from "../../assets/images/doctor1.jpg"
 import { doctorsInfo } from './contants';
 import './home.css'
 

@@ -66,7 +66,7 @@ const App = () => {
           textAlign: 'center',
         }}
       >
-        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+        Copyright ©{new Date().getFullYear()} Created by AceCare
       </Footer>
     </Layout>
   );

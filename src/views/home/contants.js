@@ -3,29 +3,14 @@
 export const doctorsInfo = [
     {
         name: "Dr. Istiak Mondal",
-        department: "Medicine",
-        imagePath: "doctor1.jpg"
+        department: "Medicine, Rheumatology",
+        imagePath: "doctor_istiak.jpg"
     },
     {
-        name: "Dr. Ayesha Mondal",
-        department: "Medicine",
-        imagePath: "doctor2.jpg"
-    },
-    {
-        name: "Dr. Evleena Mondal",
-        department: "Medicine",
-        imagePath: "doctor1.jpg"
-    },
-    {
-        name: "Dr. Ayesha Mondal",
-        department: "Medicine",
-        imagePath: "doctor2.jpg"
-    },
-    {
-        name: "Dr. Evleena Mondal",
-        department: "Medicine",
-        imagePath: "doctor1.jpg"
-    },
+        name: "Dr. Ayesha Mazumder",
+        department: "Paediatrics",
+        imagePath: "doctor_ayesha.jpg"
+    }
 ]
 
 export const departmentInfo=[
