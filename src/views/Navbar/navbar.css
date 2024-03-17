@@ -1,0 +1,53 @@
+.header-style{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  }
+
+.app-logo{
+    background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .app-logo-img{
+        height: 64px;
+        padding: 10px 0px 10px 10px;
+      }
+      .app-logo-title{
+        font-size: x-large;
+      font-weight: 600;
+      }
+  }
+  
+  .menubar-horizontal{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: none;
+    flex: 1;
+    min-width: 0,
+  }
+
+  .menu-btn {
+    display: none;
+    margin-left: auto;
+    .svg-inline--fa{
+        height: 1.2em;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .menu-btn {
+        display: block;
+      }
+    .menubar-horizontal {
+        display: none;
+    }
+  }
+  
+  
