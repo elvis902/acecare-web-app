@@ -77,13 +77,16 @@ a { color: inherit; }
 
 .about-row-2-img{
     width: 100%;
-
 }
 
 .about-row-2-col-1{
     display: flex;
-   
     justify-content: center;
+    max-width: 50%;
+}
+
+.about-row-2-col-2{
+    max-width: 50%;
 }
 
 .content h3{
@@ -229,46 +232,34 @@ a { color: inherit; }
     font-size: 4rem;
 }
 
-.footer .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 2rem;
-    padding: 8rem;
+.footer-row{
+    padding: 8rem 4rem 8rem 4rem;
     background: #777;
     color: white;
 }
 
-.footer .box-container .box{
-    padding: 2rem;
-    margin: 1rem;
-}
-
-.footer .box-container .box span{
-    padding: 10px;
-}
-
-.footer .box-container .box h3{
+.footer-col h3{
     font-size: 2rem;
     color: white;
     padding: 1rem 0;
 }
 
-.footer .box-container .box p{
+.footer-col p{
     font-size: 1.1rem;
-    padding: 1rem;
+    padding: 1rem; 
 }
 
-.footer .box-container .box .icons{
-    
+.footer-col span{
+    padding: 10px;
+}
+
+.footer-col .icons{
     font-size: 2.5rem;
 }
 
-.footer .box-container .box .icons a{
+.footer-col .icons a{
     padding: 1rem;
 }
-
-   
-
 
 
 /* .about .row{
@@ -289,3 +280,52 @@ a { color: inherit; }
     flex: 1 1 45rem;
 }
  */
+
+
+ @media (max-width: 767px) {
+    .about-row-2 {
+        flex-direction: column;
+      }
+
+    .doc-box, .dept-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .doc-1, .dept {
+        width: 40%;
+    }
+    .about-row-2-col-1, .about-row-2-col-2{
+        max-width: 100%;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content h3, p{
+        text-align: center;
+    }
+
+    .departments .heading{
+        text-align: center;
+    }
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .footer-col h3{
+        text-align: center;
+    }
+    
+    .footer-col p{
+        font-size: 1.1rem;
+        padding: 0.5rem; 
+    }
+    
+    .footer-col .icons{
+        font-size: 2rem;
+    }
+  }

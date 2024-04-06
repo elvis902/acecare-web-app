@@ -4,6 +4,7 @@ import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import InlineSVG from 'react-inlinesvg';
 import appLogo from './assets/images/acecare_logo.png'
 import Home from './views/home/home';
+import Navbar  from './views/Navbar/navbar';
 
 
 const { Header, Content, Footer } = Layout;
@@ -43,7 +44,7 @@ const App = () => {
   } = theme.useToken();
   return (
     <Layout>
-      <Header className='header-style'>
+      {/* <Header className='header-style'>
         <div className="app-logo"> 
           <img src={appLogo} alt='app-logo' className='app-logo-img'/>
           <span className='app-logo-title'>Acecare</span>
@@ -55,11 +56,11 @@ const App = () => {
           items={items}
           className='navbar-style'
         />
-      </Header>
+        
+      </Header> */}
+      <Navbar/>
       <Content className='content-style'>
         <Home/>
-  
-        
       </Content>
       <Footer
         style={{
