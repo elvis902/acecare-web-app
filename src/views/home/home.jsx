@@ -44,10 +44,10 @@ function Home(props) {
                     <Col className='about-row-1-col' span={24}>About Us</Col>
                 </Row>
                 <Row className='about-row-2'>
-                    <Col className='about-row-2-col-1' span={12}>
+                    <Col className='about-row-2-col-1'>
                         <img className='about-row-2-img' src={aboutImg} alt="" />
                     </Col>
-                    <Col span={12}>
+                    <Col className='about-row-2-col-2'>
                         <div className="content">
                             <h3>We take care of your healthy life</h3>
                             <p>Ace Care is a trusted multi-specialty clinic located in Amtol, Manaspur, Near Rabindra Sarobar, Barpeta Road, Assam - 781315. We offer a comprehensive range of services, including pediatrics, rheumatology, internal medicine, and pain medicine. Our pediatric services include well-child care, immunizations, sick-child care, growth and development evaluation, asthma management, allergy evaluation and treatment, behavioral and developmental evaluation, and adolescent health care. Our rheumatology services include evaluation and management of rheumatoid arthritis, management of systemic lupus erythematosus (SLE), management of psoriatic arthritis, management of ankylosing spondylitis, management of gout, management of osteoarthritis, infusion therapy, management of vasculitis, and management of scleroderma. Our pain medicine services include medication management, interventional pain procedures, physical therapy and rehabilitation, and pain education and counseling. Our internal medicine services include management of acute illnesses, geriatric care, women's health services, primary care services for adults, management of chronic diseases, health promotion and disease prevention, comprehensive health assessments, immunizations, mental health evaluation and treatment, and men's health services. At Ace Care, we are committed to providing expert medical care in a compassionate and patient-centered environment. We offer telehealth visits, in-person visits, and walk-ins for your convenience. If you are looking for a multi-specialty clinic in Barpeta Road, Assam, visit Ace Care or call us at 8876136211.</p>
@@ -106,8 +106,8 @@ function Home(props) {
             </section>
 
             <section className="footer" id='contact'>
-                <div className="box-container">
-                    <div className="box">
+                <Row className='footer-row'>
+                    <Col className='footer-col' xs={{span:24}} md={{span:7, offset:1}}>
                         <h3>Contacts</h3>
                         <p> <FontAwesomeIcon icon={faPhone} /> <span>8876136211,8826868550</span></p>
                         <p> <FontAwesomeIcon icon={faEnvelope} /> <span>acecare00@gmail.com</span></p>
@@ -126,19 +126,19 @@ function Home(props) {
                             <span><FontAwesomeIcon icon={faTwitter} /></span>
                             <span><FontAwesomeIcon icon={faInstagram} /></span> */}
                         </div>
-                    </div>
+                    </Col>
 
-                    <div className="box">
+                    <Col className='footer-col' xs={{span:24}} md={{span:7, offset:1}}>
                         <h3>Location</h3>
                         <p><span><FontAwesomeIcon icon={faLocationDot} /></span> Amtol, Manaspur, Near Rabindra Sarobar, Barpeta Road, Assam - 781315</p>
-                    </div>
+                    </Col>
 
-                    <div className="box">
+                    <Col className='footer-col' xs={{span:24}} md={{span:7, offset:1}}>
                         <h3>Availability</h3>
                         <p>OPD : 8am-9pm</p>
                         <p>Pharmacy : 24X7</p>
-                    </div>
-                </div >
+                    </Col>
+                </Row >
             </section >
         </>
     );
